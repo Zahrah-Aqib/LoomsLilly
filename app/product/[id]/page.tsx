@@ -6,7 +6,7 @@ import Footer from '@/components/ui/Footer';
 import { useParams } from 'next/navigation';
 import { artsProducts, craftsProducts } from '@/lib/mockData';
 import { motion } from 'framer-motion';
-import { Heart, ShoppingCart, Star, MapPin, ShieldCheck, Truck, RotateCcw } from 'lucide-react';
+import { Heart, ShoppingCart, Star, MapPin as MapPinIcon, ShieldCheck, Truck, RotateCcw } from 'lucide-react';
 import { useStore } from '@/lib/store';
 import confetti from 'canvas-confetti';
 import ProductCard from '@/components/shop/ProductCard';

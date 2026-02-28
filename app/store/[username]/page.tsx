@@ -7,7 +7,7 @@ import { useParams } from 'next/navigation';
 import { sellers, artsProducts, craftsProducts, tutorials } from '@/lib/mockData';
 import ProductCard from '@/components/shop/ProductCard';
 import { motion } from 'framer-motion';
-import { Share2, MapPin, CheckCircle, MessageCircle, Star } from 'lucide-react';
+import { Share2, MapPin as MapPinIcon, CheckCircle, MessageCircle, Star } from 'lucide-react';
 
 export default function SellerStorePage() {
     const { username } = useParams();
