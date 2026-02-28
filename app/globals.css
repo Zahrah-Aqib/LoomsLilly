@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F5F0FF;
+  --foreground: #1F1235;
+  --pastel-pink: #FFF0F7;
+  --vibrant-purple: #7C3AED;
+  --hot-pink: #EC4899;
+  --teal: #0D9488;
+  --coral-red: #F43F5E;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-pastel-pink: var(--pastel-pink);
+  --color-vibrant-purple: var(--vibrant-purple);
+  --color-hot-pink: var(--hot-pink);
+  --color-teal: var(--teal);
+  --color-coral-red: var(--coral-red);
+
+  --font-nunito: var(--font-nunito);
+  --font-inter: var(--font-inter);
+
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+
+  --shadow-soft-purple: 0 10px 25px -5px rgba(124, 58, 237, 0.1), 0 8px 10px -6px rgba(124, 58, 237, 0.1);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-nunito), Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-nunito), sans-serif;
+}
+
+.announcement-font {
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.frosted-glass {
+  background: rgba(245, 240, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(124, 58, 237, 0.1);
+}
+
+.purple-pink-gradient {
+  background: linear-gradient(135deg, #7C3AED 0%, #EC4899 100%);
+}
+
+.card-hover {
+  transition: all 0.3s ease-out;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(124, 58, 237, 0.2);
+}
